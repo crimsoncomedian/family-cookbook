@@ -1,7 +1,14 @@
 :root {
   --navy: #14305a;
+  --navy-deep: #0f2747;
   --cream: #fbf4e8;
+  --cream-deep: #f1e6d2;
   --red: #c8102e;
+  --gold: #c9a24a;
+  --terracotta: #b5532f;
+  --ink: #1d2a3f;
+  --font-body: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-script: 'Caveat', 'Segoe Script', cursive;
 }
 
 * {
@@ -11,5 +18,15 @@
 body {
   margin: 0;
   background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+a {
   color: var(--navy);
+}
+
+img {
+  max-width: 100%;
 }
