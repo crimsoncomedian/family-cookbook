@@ -1,0 +1,15 @@
+:root {
+  --navy: #14305a;
+  --cream: #fbf4e8;
+  --red: #c8102e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--navy);
+}

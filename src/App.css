@@ -1,0 +1,12 @@
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.soon {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #14305a;
+}
