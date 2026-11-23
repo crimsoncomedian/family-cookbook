@@ -1,0 +1,31 @@
+{
+  "title": "Valentín's Homemade French Toast",
+  "description": "A classic French toast with a cinnamon-vanilla custard, golden and crisp on the outside and soft in the middle.",
+  "contributor": "Sean",
+  "categories": ["main"],
+  "prepMinutes": 10,
+  "cookMinutes": 15,
+  "servings": "4 (8 slices)",
+  "ingredients": [
+    { "group": "French toast", "quantity": "8", "unit": "slices", "item": "thick-cut bread", "note": "day-old brioche, challah, or white bread works best" },
+    { "group": "French toast", "quantity": "4", "item": "large eggs" },
+    { "group": "French toast", "quantity": "1", "unit": "cup", "item": "milk" },
+    { "group": "French toast", "quantity": "1", "unit": "tablespoon", "item": "sugar" },
+    { "group": "French toast", "quantity": "1", "unit": "teaspoon", "item": "vanilla extract" },
+    { "group": "French toast", "quantity": "½", "unit": "teaspoon", "item": "ground cinnamon" },
+    { "group": "French toast", "item": "salt", "note": "a pinch" },
+    { "group": "French toast", "item": "butter", "note": "for the pan" },
+    { "group": "To serve", "item": "maple syrup" },
+    { "group": "To serve", "item": "powdered sugar or fresh fruit", "note": "optional" }
+  ],
+  "steps": [
+    "In a shallow dish, whisk the eggs, milk, sugar, vanilla, cinnamon, and salt until smooth.",
+    "Heat a large skillet or griddle over medium heat and melt a little butter.",
+    "Dip a slice of bread in the egg mixture for about 10 seconds per side, until soaked but not falling apart.",
+    "Cook in the hot pan for 2–3 minutes per side, until golden brown. Add more butter to the pan between batches.",
+    "Keep finished slices warm on a tray in a 200°F (95°C) oven while you cook the rest.",
+    "Serve warm with maple syrup and any toppings you like."
+  ],
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}
