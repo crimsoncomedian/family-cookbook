@@ -30,7 +30,9 @@
     { "group": "Cake", "text": "Gradually mix the dry ingredients into the wet ingredients until just combined. Fold in the grated carrots, nuts, and raisins (if using)." },
     { "group": "Cake", "text": "Divide the batter evenly between the prepared pans and bake for 25–30 minutes (round pans) or 35–40 minutes (9x13 pan), or until a toothpick inserted in the center comes out clean." },
     { "group": "Cake", "text": "Allow the cakes to cool in the pans for 10 minutes, then turn out onto a wire rack to cool completely." },
-    { "group": "Cream cheese frosting", "text": "In a large bowl, beat the cream cheese and butter until creamy. Gradually add the powdered sugar and beat." }
+    { "group": "Cream cheese frosting", "text": "In a large bowl, beat the cream cheese and butter until creamy. Gradually add the powdered sugar and beat." },
+    { "group": "Cream cheese frosting", "text": "Beat in the vanilla extract." },
+    { "group": "Cream cheese frosting", "text": "Once the cake is completely cool, spread the frosting over the top (and between the layers, if you used two pans)." }
   ],
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
