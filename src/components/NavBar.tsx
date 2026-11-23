@@ -1,12 +1,11 @@
 import { useState, type FormEvent } from 'react'
-import { Heart, Home, Search, Users, Utensils } from 'lucide-react'
+import { Home, Search, Users, Utensils } from 'lucide-react'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 const LINKS = [
   { to: '/', label: 'Home', Icon: Home, end: true },
   { to: '/recipes', label: 'Recipes', Icon: Utensils },
   { to: '/contributors', label: 'Contributors', Icon: Users },
-  { to: '/about', label: 'About', Icon: Heart },
 ]
 
 export default function NavBar() {
