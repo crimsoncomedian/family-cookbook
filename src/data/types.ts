@@ -17,7 +17,12 @@ export const CATEGORIES = [
 
 export type CategoryId = (typeof CATEGORIES)[number]['id']
 
+/** A step is plain text, or text with a section heading such as "Night before". */
+export type Step = string | { group?: string; text: string }
+
 export interface Ingredient {
+  /** Optional section heading, e.g. "Dough" or "Toppings" */
+  group?: string
   quantity?: string
   unit?: string
   item: string
@@ -36,7 +41,7 @@ export interface RecipeFile {
   cookMinutes?: number
   servings?: string
   ingredients: Ingredient[]
-  steps: string[]
+  steps: Step[]
   notes?: string
   featured?: boolean
   createdAt: string

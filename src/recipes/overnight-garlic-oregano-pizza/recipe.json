@@ -1,0 +1,41 @@
+{
+  "title": "Overnight Garlic & Oregano Pizza",
+  "description": "No-knead dough with an overnight refrigerator rise. Makes one pizza on a pizza tray.",
+  "contributor": "Olivia",
+  "categories": ["main"],
+  "servings": "1 pizza",
+  "ingredients": [
+    { "group": "Dough", "quantity": "2", "unit": "cups", "item": "all-purpose or bread flour", "note": "256 g" },
+    { "group": "Dough", "quantity": "1", "unit": "teaspoon", "item": "instant yeast" },
+    { "group": "Dough", "quantity": "1½", "unit": "teaspoons", "item": "kosher salt", "note": "saltiness varies by brand" },
+    { "group": "Dough", "quantity": "½", "unit": "teaspoon", "item": "garlic powder" },
+    { "group": "Dough", "quantity": "½", "unit": "teaspoon", "item": "dried oregano", "note": "O’bregano!" },
+    { "group": "Dough", "quantity": "1", "unit": "cup", "item": "lukewarm water", "note": "about 228 g" },
+    { "group": "Dough", "quantity": "1", "unit": "tablespoon", "item": "olive oil", "note": "plus extra for coating and the tray" },
+    { "group": "Toppings", "item": "pizza sauce", "note": "a thin, even layer" },
+    { "group": "Toppings", "item": "provolone", "note": "enough for a single layer over most of the sauce" },
+    { "group": "Toppings", "item": "ricotta", "note": "small, spaced dollops" },
+    { "group": "Toppings", "quantity": "¾–1", "unit": "cup", "item": "shredded mozzarella", "note": "a light, even layer" },
+    { "group": "Toppings", "quantity": "1–2", "unit": "tablespoons", "item": "grated Parmigiano-Reggiano" }
+  ],
+  "steps": [
+    { "group": "Night before", "text": "Combine flour, yeast, salt, garlic powder, and oregano in a bowl." },
+    { "group": "Night before", "text": "Pour in the lukewarm water, then add 1 tablespoon olive oil." },
+    { "group": "Night before", "text": "Mix with your hands or a spoon until no dry flour remains. The dough should be sticky and shaggy; no kneading needed." },
+    { "group": "Night before", "text": "Lightly spray or coat the surface with olive oil. Cover tightly and refrigerate overnight." },
+    { "group": "Next day", "text": "Take the dough out of the refrigerator. Allow roughly 2 hours at room temperature; it should become more relaxed and puffy." },
+    { "group": "Next day", "text": "Oil a pizza tray. Transfer the dough to the tray and gently press and stretch it into a circle, approximately ¼ inch thick. If it springs back, rest 10–15 minutes and try again." },
+    { "group": "Next day", "text": "Preheat the oven to 425°F (220°C)." },
+    { "group": "Toppings", "text": "Spread a thin, even layer of pizza sauce." },
+    { "group": "Toppings", "text": "Cover most of the sauced area with a single layer of provolone." },
+    { "group": "Toppings", "text": "Add small, spaced dollops of ricotta." },
+    { "group": "Toppings", "text": "Sprinkle on a light, even layer of shredded mozzarella (roughly ¾–1 cup if desired)." },
+    { "group": "Toppings", "text": "Finish with 1–2 tablespoons grated Parmigiano-Reggiano." },
+    { "group": "Bake", "text": "Bake at 425°F. Start checking after 15 minutes; 15–20 minutes is a guide, not a guarantee." },
+    { "group": "Bake", "text": "The edges and underside should be golden, the cheese bubbling, and the middle of the crust fully baked, not gummy. Bake longer if needed." },
+    { "group": "Bake", "text": "Let cool briefly before slicing." }
+  ],
+  "notes": "The dough is intentionally wetter than a conventional kneaded pizza dough. The cold rest develops its structure.\n\nKeep toppings reasonably light to help the center bake through. Amounts can be adjusted to taste. Add the ricotta before the mozzarella and Parmigiano so you don't drag the other cheeses around.\n\nNo meat in this version. Cooked sausage can be added on a future pizza.",
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}

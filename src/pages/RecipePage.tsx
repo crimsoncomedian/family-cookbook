@@ -9,6 +9,18 @@ function minutes(n?: number) {
   return h ? (m ? `${h} hr ${m} min` : `${h} hr`) : `${m} min`
 }
 
+/** Split a list into runs that share the same section heading. */
+function sections<T>(items: T[], groupOf: (item: T) => string | undefined) {
+  const out: { group?: string; items: T[] }[] = []
+  for (const item of items) {
+    const group = groupOf(item)
+    const last = out[out.length - 1]
+    if (last && last.group === group) last.items.push(item)
+    else out.push({ group, items: [item] })
+  }
+  return out
+}
+
 export default function RecipePage() {
   const { slug = '' } = useParams()
   const recipe = getRecipe(slug)
@@ -78,22 +90,35 @@ export default function RecipePage() {
       <div className="recipe-cols">
         <section>
           <h2 className="script">Ingredients</h2>
-          <ul className="ingredients">
-            {recipe.ingredients.map((i, idx) => (
-              <li key={idx}>
-                <strong>{[i.quantity, i.unit].filter(Boolean).join(' ')}</strong> {i.item}
-                {i.note && <em>, {i.note}</em>}
-              </li>
-            ))}
-          </ul>
+          {sections(recipe.ingredients, (i) => i.group).map((sec, n) => (
+            <div key={n}>
+              {sec.group && <h3 className="group-title">{sec.group}</h3>}
+              <ul className="ingredients">
+                {sec.items.map((i, idx) => (
+                  <li key={idx}>
+                    {(i.quantity || i.unit) && (
+                      <strong>{[i.quantity, i.unit].filter(Boolean).join(' ')} </strong>
+                    )}
+                    {i.item}
+                    {i.note && <em>, {i.note}</em>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
         <section>
           <h2 className="script">Instructions</h2>
-          <ol className="steps">
-            {recipe.steps.map((s, idx) => (
-              <li key={idx}>{s}</li>
-            ))}
-          </ol>
+          {sections(recipe.steps, (s) => (typeof s === 'string' ? undefined : s.group)).map((sec, n) => (
+            <div key={n}>
+              {sec.group && <h3 className="group-title">{sec.group}</h3>}
+              <ol className="steps">
+                {sec.items.map((s, idx) => (
+                  <li key={idx}>{typeof s === 'string' ? s : s.text}</li>
+                ))}
+              </ol>
+            </div>
+          ))}
         </section>
       </div>
 
