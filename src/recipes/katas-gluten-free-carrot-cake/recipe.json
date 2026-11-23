@@ -1,0 +1,37 @@
+{
+  "title": "Kata's Gluten Free Carrot Cake",
+  "description": "A gluten-free carrot cake with cream cheese frosting.",
+  "contributor": "Sean",
+  "categories": ["desserts"],
+  "ingredients": [
+    { "group": "Cake", "quantity": "2", "unit": "cups", "item": "gluten-free 1-to-1 all-purpose flour blend", "note": "250 g" },
+    { "group": "Cake", "quantity": "2", "unit": "teaspoons", "item": "baking powder" },
+    { "group": "Cake", "quantity": "1½", "unit": "teaspoons", "item": "baking soda" },
+    { "group": "Cake", "quantity": "1", "unit": "teaspoon", "item": "salt" },
+    { "group": "Cake", "quantity": "2", "unit": "teaspoons", "item": "ground cinnamon" },
+    { "group": "Cake", "quantity": "½", "unit": "teaspoon", "item": "ground nutmeg", "note": "optional" },
+    { "group": "Cake", "quantity": "1", "unit": "cup", "item": "granulated sugar", "note": "200 g" },
+    { "group": "Cake", "quantity": "1", "unit": "cup", "item": "packed brown sugar", "note": "200 g" },
+    { "group": "Cake", "quantity": "1", "unit": "cup", "item": "vegetable oil", "note": "240 ml; or melted coconut oil" },
+    { "group": "Cake", "quantity": "4", "item": "large eggs" },
+    { "group": "Cake", "quantity": "2", "unit": "teaspoons", "item": "vanilla extract" },
+    { "group": "Cake", "quantity": "3", "unit": "cups", "item": "grated carrots", "note": "300 g" },
+    { "group": "Cake", "quantity": "1", "unit": "cup", "item": "chopped walnuts or pecans", "note": "120 g, optional" },
+    { "group": "Cake", "quantity": "½", "unit": "cup", "item": "raisins", "note": "75 g, optional" },
+    { "group": "Cream cheese frosting", "quantity": "8", "unit": "oz", "item": "cream cheese", "note": "225 g, softened" },
+    { "group": "Cream cheese frosting", "quantity": "½", "unit": "cup", "item": "unsalted butter", "note": "115 g, softened" },
+    { "group": "Cream cheese frosting", "quantity": "3–4", "unit": "cups", "item": "powdered sugar", "note": "360–480 g" },
+    { "group": "Cream cheese frosting", "quantity": "1", "unit": "teaspoon", "item": "vanilla extract" }
+  ],
+  "steps": [
+    { "group": "Cake", "text": "Preheat your oven to 350°F (175°C). Grease and flour two 9-inch (23 cm) round cake pans or one 9x13-inch pan." },
+    { "group": "Cake", "text": "In a medium bowl, whisk together the flour, baking powder, baking soda, salt, cinnamon, and nutmeg." },
+    { "group": "Cake", "text": "In a large bowl, combine the granulated sugar, brown sugar, oil, eggs, and vanilla. Beat until smooth." },
+    { "group": "Cake", "text": "Gradually mix the dry ingredients into the wet ingredients until just combined. Fold in the grated carrots, nuts, and raisins (if using)." },
+    { "group": "Cake", "text": "Divide the batter evenly between the prepared pans and bake for 25–30 minutes (round pans) or 35–40 minutes (9x13 pan), or until a toothpick inserted in the center comes out clean." },
+    { "group": "Cake", "text": "Allow the cakes to cool in the pans for 10 minutes, then turn out onto a wire rack to cool completely." },
+    { "group": "Cream cheese frosting", "text": "In a large bowl, beat the cream cheese and butter until creamy. Gradually add the powdered sugar and beat." }
+  ],
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}
