@@ -1,0 +1,33 @@
+{
+  "title": "Donna's Homemade Pasta",
+  "contributor": "Sean",
+  "categories": ["main"],
+  "ingredients": [
+    { "group": "Dough", "quantity": "1½", "unit": "cups", "item": "all-purpose flour" },
+    { "group": "Dough", "quantity": "1½", "unit": "cups", "item": "semolina flour" },
+    { "group": "Dough", "quantity": "4", "item": "eggs" },
+    { "group": "Dough", "quantity": "2", "unit": "tablespoons", "item": "water" },
+    { "group": "Dough", "quantity": "2", "unit": "tablespoons", "item": "oil" },
+    { "group": "Dough", "quantity": "1", "unit": "teaspoon", "item": "salt" },
+    { "group": "Cooking", "item": "flour", "note": "a little, for the counter" },
+    { "group": "Cooking", "item": "salt", "note": "a little, for the pot" },
+    { "group": "Cooking", "quantity": "½", "unit": "tablespoon", "item": "salt", "note": "to mix into the cooked pasta" }
+  ],
+  "steps": [
+    { "group": "Make the dough", "text": "Mix 1½ cups all-purpose flour, 1½ cups semolina flour, and 1 teaspoon salt. Make a volcano with a hole in the middle." },
+    { "group": "Make the dough", "text": "Put one egg in at a time and mix it. Slowly push flour into the center." },
+    { "group": "Make the dough", "text": "Add 2 tablespoons water and 2 tablespoons oil." },
+    { "group": "Make the dough", "text": "Knead the dough until it is all mixed together. Add flour little by little to make it less sticky." },
+    { "group": "Cook the pasta", "text": "Fill a pan about half full with water and set the heat to the maximum." },
+    { "group": "Cook the pasta", "text": "Clean the counter, and after it dries, put a little flour down." },
+    { "group": "Cook the pasta", "text": "Roll the dough, or just smush it, so that it is thin enough to go through the pasta roller on 7. Do this a few times until you are happy with it." },
+    { "group": "Cook the pasta", "text": "Cut the dough to the size you want and put it through the roller again on 4." },
+    { "group": "Cook the pasta", "text": "Put the dough through the pasta cutter and make the special ones." },
+    { "group": "Cook the pasta", "text": "Once the water is boiling, put the pasta in the pan and set the heat to medium (halfway). Then add a little salt." },
+    { "group": "Cook the pasta", "text": "Cook the pasta for 7 minutes." },
+    { "group": "Cook the pasta", "text": "Put the strainer in the sink and strain the pasta." },
+    { "group": "Cook the pasta", "text": "Run cold water over the pasta and strain it again. Add ½ tablespoon of salt and mix it together." }
+  ],
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}
