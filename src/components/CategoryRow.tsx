@@ -1,4 +1,4 @@
-import { Beef, CakeSlice, CookingPot, Globe, Martini, Salad, Soup, type LucideIcon } from 'lucide-react'
+import { Beef, CakeSlice, CookingPot, CupSoda, Globe, Salad, Soup, type LucideIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const ITEMS: { id: string; label: string; Icon: LucideIcon; color: string }[] = [
@@ -7,7 +7,7 @@ const ITEMS: { id: string; label: string; Icon: LucideIcon; color: string }[] = 
   { id: 'sides', label: 'Sides & Salads', Icon: Salad, color: '#4f7a3a' },
   { id: 'soups', label: 'Soups & Stews', Icon: Soup, color: '#d98a1f' },
   { id: 'desserts', label: 'Desserts', Icon: CakeSlice, color: '#c2457a' },
-  { id: 'drinks', label: 'Drinks', Icon: Martini, color: '#3f8f6a' },
+  { id: 'drinks', label: 'Drinks', Icon: CupSoda, color: '#3f8f6a' },
   { id: 'fusion', label: 'Fusion Favorites', Icon: Globe, color: '#14305a' },
 ]
 
