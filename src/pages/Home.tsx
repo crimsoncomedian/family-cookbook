@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import bannerDesktop from '../assets/banner-desktop.webp'
 import bannerMobile from '../assets/banner-mobile.webp'
@@ -8,7 +9,8 @@ import SearchBar from '../components/SearchBar'
 import { getFeaturedRecipes } from '../data/recipes'
 
 export default function Home() {
-  const featured = getFeaturedRecipes()
+  // Picked once per visit to the page, so the cards don't reshuffle while you use it.
+  const featured = useMemo(() => getFeaturedRecipes(), [])
 
   return (
     <>

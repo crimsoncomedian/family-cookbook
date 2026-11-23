@@ -54,10 +54,19 @@ export function getRecipe(slug: string): Recipe | undefined {
   return all.find((r) => r.slug === slug)
 }
 
-/** Recipes marked featured; if none are marked yet, the newest few. */
+/**
+ * A random pick for the homepage, different on each visit.
+ * Chooses from recipes marked featured; if none are marked, from all recipes.
+ */
 export function getFeaturedRecipes(limit = 5): Recipe[] {
   const featured = all.filter((r) => r.featured)
-  return (featured.length > 0 ? featured : all).slice(0, limit)
+  const pool = [...(featured.length > 0 ? featured : all)]
+  // Fisher-Yates shuffle
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  return pool.slice(0, limit)
 }
 
 export function getRecipesByContributor(name: string): Recipe[] {
