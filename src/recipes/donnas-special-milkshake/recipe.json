@@ -1,0 +1,18 @@
+{
+  "title": "Donna's Special Milkshake",
+  "contributor": "Sean",
+  "categories": ["drinks"],
+  "ingredients": [
+    { "quantity": "3", "unit": "scoops", "item": "vanilla ice cream" },
+    { "quantity": "½", "unit": "cup", "item": "milk" },
+    { "item": "whipped cream", "note": "to top" },
+    { "item": "sprinkles", "note": "to top" }
+  ],
+  "steps": [
+    "Blend the ice cream and milk until smooth.",
+    "Pour into a glass.",
+    "Top with whipped cream and sprinkles."
+  ],
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}
