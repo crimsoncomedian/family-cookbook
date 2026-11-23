@@ -1,4 +1,4 @@
-import { Heart, Utensils } from 'lucide-react'
+import { Utensils } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { Recipe } from '../data/types'
 
@@ -14,9 +14,6 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
       </div>
       <div className="card-body">
         <h3>{recipe.title}</h3>
-        <p className="by">
-          <Heart size={14} fill="currentColor" aria-hidden="true" /> {recipe.contributor}
-        </p>
       </div>
     </Link>
   )
