@@ -1,0 +1,29 @@
+{
+  "title": "Donna's Homemade Pancakes",
+  "contributor": "Sean",
+  "categories": ["main"],
+  "ingredients": [
+    { "group": "Dry ingredients", "quantity": "½", "unit": "cup", "item": "all-purpose flour", "note": "spooned and leveled" },
+    { "group": "Dry ingredients", "quantity": "1", "unit": "tablespoon", "item": "sugar" },
+    { "group": "Dry ingredients", "quantity": "1", "unit": "teaspoon", "item": "baking powder" },
+    { "group": "Dry ingredients", "quantity": "½", "unit": "teaspoon", "item": "baking soda" },
+    { "group": "Dry ingredients", "quantity": "½", "unit": "teaspoon", "item": "salt" },
+    { "group": "Wet ingredients", "quantity": "1", "unit": "tablespoon", "item": "butter" },
+    { "group": "Wet ingredients", "quantity": "½", "unit": "cup", "item": "milk" },
+    { "group": "Wet ingredients", "quantity": "1", "item": "large egg" },
+    { "group": "Wet ingredients", "quantity": "1", "unit": "tablespoon", "item": "vegetable oil" },
+    { "group": "Optional", "item": "chocolate chips" }
+  ],
+  "steps": [
+    "Take out the skillet and set it to 350°F.",
+    "In a large mixing bowl, mix ½ cup all-purpose flour (spooned and leveled), 1 tablespoon sugar, 1 teaspoon baking powder, ½ teaspoon baking soda, and ½ teaspoon salt.",
+    "Put 1 tablespoon of butter in a small mixing bowl and microwave it for 45 seconds.",
+    "Add ½ cup milk, 1 large egg, and 1 tablespoon vegetable oil to the small bowl with the butter.",
+    "Pour the small bowl into the large bowl and mix it together.",
+    "Stir in chocolate chips if you want.",
+    "Cook on the skillet for about 1 minute per side. Flip when there are bubbles in the middle.",
+    "Unplug the skillet."
+  ],
+  "createdAt": "2026-11-22",
+  "updatedAt": "2026-11-22"
+}
