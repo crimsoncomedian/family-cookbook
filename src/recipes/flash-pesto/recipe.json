@@ -1,0 +1,36 @@
+{
+  "title": "Flash Pesto",
+  "contributor": "Kata",
+  "categories": ["sides"],
+  "ingredients": [
+    { "quantity": "1", "unit": "cup", "item": "fresh basil", "note": "washed" },
+    { "quantity": "½", "unit": "cup", "item": "walnuts" },
+    { "quantity": "½", "unit": "cup", "item": "olive oil" },
+    { "quantity": "½", "unit": "cup", "item": "milk" },
+    { "quantity": "½", "unit": "teaspoon", "item": "salt" }
+  ],
+  "steps": [
+    "Put the basil in the food processor.",
+    "Add the milk, olive oil, and ½ teaspoon of salt.",
+    "Chop the walnuts and, when you finish, sprinkle them over the pesto.",
+    "You can eat it with bread or spaghetti."
+  ],
+  "es": {
+    "title": "Flash Pesto",
+    "ingredients": [
+      { "quantity": "30", "unit": "g", "item": "albahaca fresca", "note": "lavada" },
+      { "quantity": "60", "unit": "g", "item": "nueces" },
+      { "quantity": "120", "unit": "ml", "item": "aceite de oliva" },
+      { "quantity": "120", "unit": "ml", "item": "leche" },
+      { "quantity": "½", "unit": "cucharadita", "item": "sal" }
+    ],
+    "steps": [
+      "Pon la albahaca en la procesadora.",
+      "Incorpora la leche, el aceite y media cucharadita de sal.",
+      "Troza las nueces y, al finalizar, espárcelas sobre el pesto.",
+      "Puedes comerlo con pan o spaghetti."
+    ]
+  },
+  "createdAt": "2026-11-24",
+  "updatedAt": "2026-11-24"
+}
