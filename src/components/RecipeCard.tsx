@@ -1,10 +1,12 @@
 import { Utensils } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { Recipe } from '../data/types'
+import { useLang } from '../i18n/LangContext'
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
+  const { to } = useLang()
   return (
-    <Link to={`/recipe/${recipe.slug}`} className="card">
+    <Link to={to(`/recipe/${recipe.slug}`)} className="card">
       <div className="card-photo">
         {recipe.photo ? (
           <img src={recipe.photo} alt="" loading="lazy" />

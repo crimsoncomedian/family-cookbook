@@ -1,9 +1,14 @@
-import { CATEGORIES, CONTRIBUTORS, type Recipe, type RecipeFile } from './types'
+import { dict, type Lang } from '../i18n/strings'
+import { CONTRIBUTORS, type CategoryId, type Recipe, type RecipeFile } from './types'
 
 /*
  * The only place that knows where recipes are stored.
  * Real recipes live in src/recipes/<slug>/recipe.json (+ optional photo.*).
  * Pages call the functions below and never read files themselves.
+ *
+ * Every function that returns recipes takes the visitor's language and hands back
+ * the recipe's text in that language. A recipe with no Spanish section falls back
+ * to English and is marked translated: false.
  */
 
 const files = import.meta.glob<RecipeFile>('/src/recipes/*/recipe.json', {
@@ -46,19 +51,38 @@ const all: Recipe[] = [...real, ...samples].sort((a, b) =>
   b.updatedAt.localeCompare(a.updatedAt),
 )
 
-export function getAllRecipes(): Recipe[] {
-  return all
+/** The recipe's text in the requested language (English if there is no Spanish yet). */
+function localize(recipe: Recipe, lang: Lang): Recipe {
+  if (lang === 'es' && recipe.es) {
+    const es = recipe.es
+    return {
+      ...recipe,
+      title: es.title,
+      description: es.description,
+      servings: es.servings ?? recipe.servings,
+      ingredients: es.ingredients,
+      steps: es.steps,
+      notes: es.notes,
+      translated: true,
+    }
+  }
+  return { ...recipe, translated: lang === 'en' }
 }
 
-export function getRecipe(slug: string): Recipe | undefined {
-  return all.find((r) => r.slug === slug)
+export function getAllRecipes(lang: Lang): Recipe[] {
+  return all.map((r) => localize(r, lang))
+}
+
+export function getRecipe(slug: string, lang: Lang): Recipe | undefined {
+  const found = all.find((r) => r.slug === slug)
+  return found ? localize(found, lang) : undefined
 }
 
 /**
  * A random pick for the homepage, different on each visit.
  * Chooses from recipes marked featured; if none are marked, from all recipes.
  */
-export function getFeaturedRecipes(limit = 5): Recipe[] {
+export function getFeaturedRecipes(lang: Lang, limit = 5): Recipe[] {
   const featured = all.filter((r) => r.featured)
   const pool = [...(featured.length > 0 ? featured : all)]
   // Fisher-Yates shuffle
@@ -66,41 +90,47 @@ export function getFeaturedRecipes(limit = 5): Recipe[] {
     const j = Math.floor(Math.random() * (i + 1))
     ;[pool[i], pool[j]] = [pool[j], pool[i]]
   }
-  return pool.slice(0, limit)
+  return pool.slice(0, limit).map((r) => localize(r, lang))
 }
 
-export function getRecipesByContributor(name: string): Recipe[] {
-  return all.filter((r) => r.contributor === name)
+export function getRecipesByContributor(name: string, lang: Lang): Recipe[] {
+  return all.filter((r) => r.contributor === name).map((r) => localize(r, lang))
 }
 
 export function contributorSlug(name: string): string | undefined {
   return CONTRIBUTORS.find((c) => c.name === name)?.slug
 }
 
-export function categoryLabel(id: string): string {
-  return CATEGORIES.find((c) => c.id === id)?.label ?? id
+export function categoryLabel(id: CategoryId, lang: Lang): string {
+  return dict[lang].cat[id]
 }
 
-/** Strip accents and lowercase so "Valentin" finds "Valentín". */
+/** Strip accents and lowercase so "Valentin" finds "Valentín" and "huevo" finds "huevo". */
 function norm(s: string) {
-  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+  return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 }
 
-export function searchRecipes(query: string, categoryId?: string): Recipe[] {
+/** Searches the recipe's English and Spanish text together, whichever language the site is in. */
+export function searchRecipes(query: string, categoryId: string | undefined, lang: Lang): Recipe[] {
   const words = norm(query).split(/\s+/).filter(Boolean)
-  return all.filter((r) => {
-    if (categoryId && !r.categories.includes(categoryId as never)) return false
-    if (words.length === 0) return true
-    const haystack = norm(
-      [
-        r.title,
-        r.description ?? '',
-        r.contributor,
-        ...(r.cuisine ?? []),
-        ...r.categories.map(categoryLabel),
-        ...r.ingredients.map((i) => i.item),
-      ].join(' '),
-    )
-    return words.every((w) => haystack.includes(w))
-  })
+  return all
+    .filter((r) => {
+      if (categoryId && !r.categories.includes(categoryId as CategoryId)) return false
+      if (words.length === 0) return true
+      const haystack = norm(
+        [
+          r.title,
+          r.description ?? '',
+          r.contributor,
+          ...(r.cuisine ?? []),
+          ...r.categories.flatMap((c) => [categoryLabel(c, 'en'), categoryLabel(c, 'es')]),
+          ...r.ingredients.map((i) => i.item),
+          r.es?.title ?? '',
+          r.es?.description ?? '',
+          ...(r.es?.ingredients.map((i) => i.item) ?? []),
+        ].join(' '),
+      )
+      return words.every((w) => haystack.includes(w))
+    })
+    .map((r) => localize(r, lang))
 }

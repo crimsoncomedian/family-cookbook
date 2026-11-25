@@ -29,6 +29,17 @@ export interface Ingredient {
   note?: string
 }
 
+/** The words of a recipe in one language. Used for the Spanish version. */
+export interface RecipeText {
+  title: string
+  description?: string
+  servings?: string
+  /** Translated and converted to metric (g, ml, °C) */
+  ingredients: Ingredient[]
+  steps: Step[]
+  notes?: string
+}
+
 /** The shape of recipe.json inside src/recipes/<slug>/ */
 export interface RecipeFile {
   title: string
@@ -44,11 +55,15 @@ export interface RecipeFile {
   steps: Step[]
   notes?: string
   featured?: boolean
+  /** Spanish version of the text. Everything else (times, categories, photo) is shared. */
+  es?: RecipeText
   createdAt: string
   updatedAt: string
 }
 
 export interface Recipe extends RecipeFile {
+  /** False when the visitor asked for Spanish but this recipe has no Spanish version yet */
+  translated?: boolean
   /** The recipe's folder name, used in its web address */
   slug: string
   /** Web address of src/recipes/<slug>/photo.* if one exists */

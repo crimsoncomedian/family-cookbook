@@ -1,19 +1,18 @@
 import { Heart } from 'lucide-react'
+import { useLang } from '../i18n/LangContext'
 import { ChileFlag, Mountains, UsFlag } from './Flags'
 
 export default function FamilyCard() {
+  const { t } = useLang()
   return (
     <aside className="family-card">
-      <h2 className="script">Good Food Brings Us Together</h2>
+      <h2 className="script">{t.familyTitle}</h2>
       <div className="rule">
         <span />
         <Heart size={14} fill="#c8102e" color="#c8102e" aria-hidden="true" />
         <span />
       </div>
-      <p>
-        A family cookbook for our Chilean and American roots, our shared adventures, and all the
-        delicious places in between.
-      </p>
+      <p>{t.familyText}</p>
       <Mountains />
       <div className="flags">
         <span />
@@ -22,7 +21,7 @@ export default function FamilyCard() {
         <ChileFlag />
         <span />
       </div>
-      <p className="tagline">Real recipes • Family • Always</p>
+      <p className="tagline">{t.familyTagline}</p>
     </aside>
   )
 }

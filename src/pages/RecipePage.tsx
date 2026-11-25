@@ -1,13 +1,7 @@
 import { Clock, Heart, Users, Utensils } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
-import { categoryLabel, contributorSlug, getRecipe } from '../data/recipes'
-
-function minutes(n?: number) {
-  if (!n) return null
-  const h = Math.floor(n / 60)
-  const m = n % 60
-  return h ? (m ? `${h} hr ${m} min` : `${h} hr`) : `${m} min`
-}
+import { contributorSlug, getRecipe } from '../data/recipes'
+import { useLang } from '../i18n/LangContext'
 
 /** Split a list into runs that share the same section heading. */
 function sections<T>(items: T[], groupOf: (item: T) => string | undefined) {
@@ -23,14 +17,22 @@ function sections<T>(items: T[], groupOf: (item: T) => string | undefined) {
 
 export default function RecipePage() {
   const { slug = '' } = useParams()
-  const recipe = getRecipe(slug)
+  const { lang, t, to } = useLang()
+  const recipe = getRecipe(slug, lang)
+
+  function minutes(n?: number) {
+    if (!n) return null
+    const h = Math.floor(n / 60)
+    const m = n % 60
+    return h ? (m ? `${h} ${t.hr} ${m} ${t.min}` : `${h} ${t.hr}`) : `${m} ${t.min}`
+  }
 
   if (!recipe) {
     return (
       <div className="wrap page">
-        <h1 className="script section-title">Recipe not found</h1>
+        <h1 className="script section-title">{t.notFound}</h1>
         <p className="empty">
-          We couldn't find that recipe. <Link to="/recipes">Browse all recipes</Link>
+          {t.notFoundText} <Link to={to('/recipes')}>{t.browseAll}</Link>
         </p>
       </div>
     )
@@ -43,7 +45,7 @@ export default function RecipePage() {
   return (
     <article className="wrap page recipe">
       <p className="crumbs">
-        <Link to="/recipes">← All recipes</Link>
+        <Link to={to('/recipes')}>{t.backToAll}</Link>
       </p>
       <div className="recipe-photo">
         {recipe.photo ? (
@@ -55,24 +57,29 @@ export default function RecipePage() {
       <h1 className="script recipe-title">{recipe.title}</h1>
       <p className="by">
         <Heart size={15} fill="currentColor" aria-hidden="true" />{' '}
-        {who ? <Link to={`/contributors#${who}`}>{recipe.contributor}</Link> : recipe.contributor}
+        {who ? (
+          <Link to={`${to('/contributors')}#${who}`}>{recipe.contributor}</Link>
+        ) : (
+          recipe.contributor
+        )}
       </p>
+      {!recipe.translated && <p className="untranslated">{t.notTranslated}</p>}
       {recipe.description && <p className="lede">{recipe.description}</p>}
 
       <ul className="meta">
         {prep && (
           <li>
-            <Clock size={16} aria-hidden="true" /> Prep {prep}
+            <Clock size={16} aria-hidden="true" /> {t.prep} {prep}
           </li>
         )}
         {cook && (
           <li>
-            <Clock size={16} aria-hidden="true" /> Cook {cook}
+            <Clock size={16} aria-hidden="true" /> {t.cook} {cook}
           </li>
         )}
         {recipe.servings && (
           <li>
-            <Users size={16} aria-hidden="true" /> Serves {recipe.servings}
+            <Users size={16} aria-hidden="true" /> {t.serves} {recipe.servings}
           </li>
         )}
         {recipe.cuisine?.map((c) => (
@@ -82,14 +89,14 @@ export default function RecipePage() {
         ))}
         {recipe.categories.map((c) => (
           <li key={c} className="tag">
-            {categoryLabel(c)}
+            {t.cat[c]}
           </li>
         ))}
       </ul>
 
       <div className="recipe-cols">
         <section>
-          <h2 className="script">Ingredients</h2>
+          <h2 className="script">{t.ingredients}</h2>
           {sections(recipe.ingredients, (i) => i.group).map((sec, n) => (
             <div key={n}>
               {sec.group && <h3 className="group-title">{sec.group}</h3>}
@@ -99,7 +106,8 @@ export default function RecipePage() {
                     {(i.quantity || i.unit) && (
                       <strong>{[i.quantity, i.unit].filter(Boolean).join(' ')} </strong>
                     )}
-                    {i.item}
+                    {/* Spanish says "1 cucharada de azúcar": a measure is followed by "de" */}
+                    {lang === 'es' && i.unit ? `de ${i.item}` : i.item}
                     {i.note && <em>, {i.note}</em>}
                   </li>
                 ))}
@@ -108,7 +116,7 @@ export default function RecipePage() {
           ))}
         </section>
         <section>
-          <h2 className="script">Instructions</h2>
+          <h2 className="script">{t.instructions}</h2>
           {sections(recipe.steps, (s) => (typeof s === 'string' ? undefined : s.group)).map((sec, n) => (
             <div key={n}>
               {sec.group && <h3 className="group-title">{sec.group}</h3>}
@@ -124,7 +132,7 @@ export default function RecipePage() {
 
       {recipe.notes && (
         <section className="notes">
-          <h2 className="script">Family notes</h2>
+          <h2 className="script">{t.familyNotes}</h2>
           <p>{recipe.notes}</p>
         </section>
       )}

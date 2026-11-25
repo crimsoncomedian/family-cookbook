@@ -24,6 +24,31 @@
     "Cook on the skillet for about 1 minute per side. Flip when there are bubbles in the middle.",
     "Unplug the skillet."
   ],
+  "es": {
+    "title": "Panqueques caseros de Donna",
+    "ingredients": [
+      { "group": "Ingredientes secos", "quantity": "60", "unit": "g", "item": "harina sin preparar" },
+      { "group": "Ingredientes secos", "quantity": "1", "unit": "cucharada", "item": "azúcar" },
+      { "group": "Ingredientes secos", "quantity": "1", "unit": "cucharadita", "item": "polvos de hornear" },
+      { "group": "Ingredientes secos", "quantity": "½", "unit": "cucharadita", "item": "bicarbonato de sodio" },
+      { "group": "Ingredientes secos", "quantity": "½", "unit": "cucharadita", "item": "sal" },
+      { "group": "Ingredientes húmedos", "quantity": "1", "unit": "cucharada", "item": "mantequilla" },
+      { "group": "Ingredientes húmedos", "quantity": "120", "unit": "ml", "item": "leche" },
+      { "group": "Ingredientes húmedos", "quantity": "1", "item": "huevo grande" },
+      { "group": "Ingredientes húmedos", "quantity": "1", "unit": "cucharada", "item": "aceite vegetal" },
+      { "group": "Opcional", "item": "chips de chocolate" }
+    ],
+    "steps": [
+      "Saca la sartén y ajústala a 175 °C.",
+      "En un bowl grande, mezcla 60 g de harina sin preparar, 1 cucharada de azúcar, 1 cucharadita de polvos de hornear, ½ cucharadita de bicarbonato de sodio y ½ cucharadita de sal.",
+      "Pon 1 cucharada de mantequilla en un bowl pequeño y derrítela en el microondas por 45 segundos.",
+      "Agrega 120 ml de leche, 1 huevo grande y 1 cucharada de aceite vegetal al bowl pequeño con la mantequilla.",
+      "Vierte el bowl pequeño en el bowl grande y mezcla todo.",
+      "Si quieres, agrega chips de chocolate.",
+      "Cocina en la sartén por aproximadamente 1 minuto por lado. Dale vuelta cuando se formen burbujas en el centro.",
+      "Desenchufa la sartén."
+    ]
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }

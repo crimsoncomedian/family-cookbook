@@ -2,12 +2,14 @@ import { useSearchParams } from 'react-router-dom'
 import RecipeCard from '../components/RecipeCard'
 import { searchRecipes } from '../data/recipes'
 import { CATEGORIES } from '../data/types'
+import { useLang } from '../i18n/LangContext'
 
 export default function Recipes() {
+  const { lang, t } = useLang()
   const [params, setParams] = useSearchParams()
   const q = params.get('q') ?? ''
   const category = params.get('category') ?? ''
-  const results = searchRecipes(q, category || undefined)
+  const results = searchRecipes(q, category || undefined, lang)
 
   function update(key: string, value: string) {
     const next = new URLSearchParams(params)
@@ -18,24 +20,24 @@ export default function Recipes() {
 
   return (
     <div className="wrap page">
-      <h1 className="script section-title">Recipes</h1>
+      <h1 className="script section-title">{t.recipesTitle}</h1>
       <div className="filters">
         <input
           type="search"
           value={q}
           onChange={(e) => update('q', e.target.value)}
-          placeholder="Search by name, ingredient, cuisine, or person..."
-          aria-label="Search recipes"
+          placeholder={t.filterPlaceholder}
+          aria-label={t.filterLabel}
         />
         <select
           value={category}
           onChange={(e) => update('category', e.target.value)}
-          aria-label="Filter by category"
+          aria-label={t.categoryFilterLabel}
         >
-          <option value="">All categories</option>
+          <option value="">{t.allCategories}</option>
           {CATEGORIES.map((c) => (
             <option key={c.id} value={c.id}>
-              {c.label}
+              {t.cat[c.id]}
             </option>
           ))}
         </select>
@@ -47,9 +49,7 @@ export default function Recipes() {
           ))}
         </div>
       ) : (
-        <p className="empty">
-          {q || category ? 'No recipes match that search.' : 'No recipes have been added yet.'}
-        </p>
+        <p className="empty">{q || category ? t.noMatch : t.noRecipes}</p>
       )}
     </div>
   )
