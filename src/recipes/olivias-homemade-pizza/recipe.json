@@ -36,6 +36,43 @@
     { "group": "Bake", "text": "Let cool briefly before slicing." }
   ],
   "notes": "The dough is intentionally wetter than a conventional kneaded pizza dough. The cold rest develops its structure.\n\nKeep toppings reasonably light to help the center bake through. Amounts can be adjusted to taste. Add the ricotta before the mozzarella and Parmigiano so you don't drag the other cheeses around.\n\nNo meat in this version. Cooked sausage can be added on a future pizza.",
+  "es": {
+    "title": "Pizza casera de Olivia",
+    "description": "Masa sin amasar con reposo en el refrigerador toda la noche. Rinde una pizza en una bandeja para pizza.",
+    "servings": "1 pizza",
+    "ingredients": [
+      { "group": "Masa", "quantity": "256", "unit": "g", "item": "harina sin preparar o harina para pan" },
+      { "group": "Masa", "quantity": "1", "unit": "cucharadita", "item": "levadura instantánea" },
+      { "group": "Masa", "quantity": "1½", "unit": "cucharaditas", "item": "sal kosher", "note": "qué tan salada es varía según la marca" },
+      { "group": "Masa", "quantity": "½", "unit": "cucharadita", "item": "ajo en polvo" },
+      { "group": "Masa", "quantity": "½", "unit": "cucharadita", "item": "orégano seco", "note": "¡O’bregano!" },
+      { "group": "Masa", "quantity": "230", "unit": "ml", "item": "agua tibia" },
+      { "group": "Masa", "quantity": "1", "unit": "cucharada", "item": "aceite de oliva", "note": "más un poco extra para untar y para la bandeja" },
+      { "group": "Cobertura", "item": "salsa para pizza", "note": "una capa delgada y pareja" },
+      { "group": "Cobertura", "item": "queso provolone", "note": "lo suficiente para una sola capa sobre casi toda la salsa" },
+      { "group": "Cobertura", "item": "ricotta", "note": "porciones pequeñas, separadas entre sí" },
+      { "group": "Cobertura", "quantity": "75–100", "unit": "g", "item": "queso mozzarella rallado", "note": "una capa ligera y pareja" },
+      { "group": "Cobertura", "quantity": "1–2", "unit": "cucharadas", "item": "Parmigiano-Reggiano rallado" }
+    ],
+    "steps": [
+      { "group": "La noche anterior", "text": "Mezcla en un bowl la harina, la levadura, la sal, el ajo en polvo y el orégano." },
+      { "group": "La noche anterior", "text": "Agrega el agua tibia y luego 1 cucharada de aceite de oliva." },
+      { "group": "La noche anterior", "text": "Mezcla con las manos o con una cuchara hasta que no quede harina seca. La masa debe quedar pegajosa y desordenada; no hay que amasar." },
+      { "group": "La noche anterior", "text": "Rocía o unta un poco de aceite de oliva sobre la superficie. Tapa bien y refrigera toda la noche." },
+      { "group": "Al día siguiente", "text": "Saca la masa del refrigerador. Déjala unas 2 horas a temperatura ambiente; debería relajarse y esponjarse." },
+      { "group": "Al día siguiente", "text": "Unta una bandeja para pizza con aceite. Pasa la masa a la bandeja y presiónala y estírala suavemente formando un círculo de aproximadamente 6 mm de grosor. Si se encoge, déjala reposar de 10 a 15 minutos y vuelve a intentarlo." },
+      { "group": "Al día siguiente", "text": "Precalienta el horno a 220 °C." },
+      { "group": "Cobertura", "text": "Esparce una capa delgada y pareja de salsa para pizza." },
+      { "group": "Cobertura", "text": "Cubre la mayor parte de la salsa con una sola capa de provolone." },
+      { "group": "Cobertura", "text": "Agrega porciones pequeñas de ricotta, separadas entre sí." },
+      { "group": "Cobertura", "text": "Espolvorea una capa ligera y pareja de mozzarella rallada (unos 75–100 g, si quieres)." },
+      { "group": "Cobertura", "text": "Termina con 1–2 cucharadas de Parmigiano-Reggiano rallado." },
+      { "group": "Horneado", "text": "Hornea a 220 °C. Empieza a revisar después de 15 minutos; de 15 a 20 minutos es una guía, no una garantía." },
+      { "group": "Horneado", "text": "Los bordes y la base deben quedar dorados, el queso burbujeante y el centro de la masa bien cocido, no pastoso. Hornea más tiempo si hace falta." },
+      { "group": "Horneado", "text": "Deja enfriar un poco antes de cortar." }
+    ],
+    "notes": "La masa es intencionalmente más húmeda que una masa de pizza amasada tradicional. El reposo en frío desarrolla su estructura.\n\nMantén la cobertura bien liviana para que el centro se cocine por completo. Las cantidades se pueden ajustar al gusto. Agrega la ricotta antes de la mozzarella y el Parmigiano para no arrastrar los otros quesos.\n\nEsta versión no lleva carne. En una próxima pizza se puede agregar salchicha cocida."
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }

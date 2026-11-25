@@ -28,6 +28,35 @@
     { "group": "Cook the pasta", "text": "Put the strainer in the sink and strain the pasta." },
     { "group": "Cook the pasta", "text": "Run cold water over the pasta and strain it again. Add ½ tablespoon of salt and mix it together." }
   ],
+  "es": {
+    "title": "Pasta casera de Donna",
+    "ingredients": [
+      { "group": "Masa", "quantity": "190", "unit": "g", "item": "harina sin preparar" },
+      { "group": "Masa", "quantity": "250", "unit": "g", "item": "sémola" },
+      { "group": "Masa", "quantity": "4", "item": "huevos" },
+      { "group": "Masa", "quantity": "2", "unit": "cucharadas", "item": "agua" },
+      { "group": "Masa", "quantity": "2", "unit": "cucharadas", "item": "aceite" },
+      { "group": "Masa", "quantity": "1", "unit": "cucharadita", "item": "sal" },
+      { "group": "Cocción", "item": "harina", "note": "un poco, para el mesón" },
+      { "group": "Cocción", "item": "sal", "note": "un poco, para la olla" },
+      { "group": "Cocción", "quantity": "½", "unit": "cucharada", "item": "sal", "note": "para mezclar con la pasta cocida" }
+    ],
+    "steps": [
+      { "group": "Prepara la masa", "text": "Mezcla 190 g de harina sin preparar, 250 g de sémola y 1 cucharadita de sal. Forma un volcán con un hoyo en el medio." },
+      { "group": "Prepara la masa", "text": "Agrega los huevos de a uno y mezcla. Ve empujando la harina poco a poco hacia el centro." },
+      { "group": "Prepara la masa", "text": "Agrega 2 cucharadas de agua y 2 cucharadas de aceite." },
+      { "group": "Prepara la masa", "text": "Amasa hasta que todo esté bien integrado. Agrega harina de a poco para que quede menos pegajosa." },
+      { "group": "Cocina la pasta", "text": "Llena una olla hasta la mitad con agua y pon el fuego al máximo." },
+      { "group": "Cocina la pasta", "text": "Limpia el mesón y, cuando se seque, espolvorea un poco de harina." },
+      { "group": "Cocina la pasta", "text": "Estira la masa, o simplemente aplástala, hasta que quede lo bastante delgada para pasar por la máquina de pasta en el número 7. Repite esto varias veces hasta que quedes conforme." },
+      { "group": "Cocina la pasta", "text": "Corta la masa del tamaño que quieras y pásala otra vez por la máquina en el número 4." },
+      { "group": "Cocina la pasta", "text": "Pasa la masa por el cortador de pasta y haz las especiales." },
+      { "group": "Cocina la pasta", "text": "Cuando el agua hierva, echa la pasta a la olla y baja el fuego a medio (a la mitad). Luego agrega un poco de sal." },
+      { "group": "Cocina la pasta", "text": "Cocina la pasta por 7 minutos." },
+      { "group": "Cocina la pasta", "text": "Pon el colador en el lavaplatos y cuela la pasta." },
+      { "group": "Cocina la pasta", "text": "Pasa agua fría por la pasta y cuélala de nuevo. Agrega ½ cucharada de sal y mezcla." }
+    ]
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }

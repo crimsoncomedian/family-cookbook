@@ -26,6 +26,31 @@
     "Keep finished slices warm on a tray in a 200°F (95°C) oven while you cook the rest.",
     "Serve warm with maple syrup and any toppings you like."
   ],
+  "es": {
+    "title": "Tostadas francesas caseras de Valentín",
+    "description": "Unas tostadas francesas clásicas con una mezcla de huevo, canela y vainilla: doradas y crujientes por fuera y suaves por dentro.",
+    "servings": "4 (8 rebanadas)",
+    "ingredients": [
+      { "group": "Tostadas francesas", "quantity": "8", "unit": "rebanadas", "item": "pan grueso", "note": "lo mejor es pan brioche, challah o pan blanco del día anterior" },
+      { "group": "Tostadas francesas", "quantity": "4", "item": "huevos grandes" },
+      { "group": "Tostadas francesas", "quantity": "240", "unit": "ml", "item": "leche" },
+      { "group": "Tostadas francesas", "quantity": "1", "unit": "cucharada", "item": "azúcar" },
+      { "group": "Tostadas francesas", "quantity": "1", "unit": "cucharadita", "item": "esencia de vainilla" },
+      { "group": "Tostadas francesas", "quantity": "½", "unit": "cucharadita", "item": "canela molida" },
+      { "group": "Tostadas francesas", "item": "sal", "note": "una pizca" },
+      { "group": "Tostadas francesas", "item": "mantequilla", "note": "para la sartén" },
+      { "group": "Para servir", "item": "miel de maple" },
+      { "group": "Para servir", "item": "azúcar flor o fruta fresca", "note": "opcional" }
+    ],
+    "steps": [
+      "En un plato hondo, bate los huevos, la leche, el azúcar, la vainilla, la canela y la sal hasta que quede una mezcla suave.",
+      "Calienta una sartén grande o una plancha a fuego medio y derrite un poco de mantequilla.",
+      "Sumerge una rebanada de pan en la mezcla de huevo por unos 10 segundos por lado, hasta que esté bien empapada pero sin deshacerse.",
+      "Cocina en la sartén caliente de 2 a 3 minutos por lado, hasta que esté dorada. Agrega más mantequilla a la sartén entre una tanda y otra.",
+      "Mantén las tostadas ya cocidas calientes en una bandeja dentro del horno a 95 °C mientras cocinas el resto.",
+      "Sirve caliente con miel de maple y lo que más te guste encima."
+    ]
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }

@@ -34,6 +34,41 @@
     { "group": "Cream cheese frosting", "text": "Beat in the vanilla extract." },
     { "group": "Cream cheese frosting", "text": "Once the cake is completely cool, spread the frosting over the top (and between the layers, if you used two pans)." }
   ],
+  "es": {
+    "title": "Torta de zanahoria sin gluten de Kata",
+    "description": "Una torta de zanahoria sin gluten con cobertura de queso crema.",
+    "ingredients": [
+      { "group": "Torta", "quantity": "250", "unit": "g", "item": "mezcla de harina sin gluten 1 a 1 para todo uso" },
+      { "group": "Torta", "quantity": "2", "unit": "cucharaditas", "item": "polvos de hornear" },
+      { "group": "Torta", "quantity": "1½", "unit": "cucharaditas", "item": "bicarbonato de sodio" },
+      { "group": "Torta", "quantity": "1", "unit": "cucharadita", "item": "sal" },
+      { "group": "Torta", "quantity": "2", "unit": "cucharaditas", "item": "canela molida" },
+      { "group": "Torta", "quantity": "½", "unit": "cucharadita", "item": "nuez moscada molida", "note": "opcional" },
+      { "group": "Torta", "quantity": "200", "unit": "g", "item": "azúcar granulada" },
+      { "group": "Torta", "quantity": "200", "unit": "g", "item": "azúcar rubia", "note": "bien compactada" },
+      { "group": "Torta", "quantity": "240", "unit": "ml", "item": "aceite vegetal", "note": "o aceite de coco derretido" },
+      { "group": "Torta", "quantity": "4", "item": "huevos grandes" },
+      { "group": "Torta", "quantity": "2", "unit": "cucharaditas", "item": "esencia de vainilla" },
+      { "group": "Torta", "quantity": "300", "unit": "g", "item": "zanahoria rallada" },
+      { "group": "Torta", "quantity": "120", "unit": "g", "item": "nueces o pecanas picadas", "note": "opcional" },
+      { "group": "Torta", "quantity": "75", "unit": "g", "item": "pasas", "note": "opcional" },
+      { "group": "Cobertura de queso crema", "quantity": "225", "unit": "g", "item": "queso crema", "note": "blando, a temperatura ambiente" },
+      { "group": "Cobertura de queso crema", "quantity": "115", "unit": "g", "item": "mantequilla sin sal", "note": "blanda" },
+      { "group": "Cobertura de queso crema", "quantity": "360–480", "unit": "g", "item": "azúcar flor" },
+      { "group": "Cobertura de queso crema", "quantity": "1", "unit": "cucharadita", "item": "esencia de vainilla" }
+    ],
+    "steps": [
+      { "group": "Torta", "text": "Precalienta el horno a 175 °C. Engrasa y enharina dos moldes redondos de 23 cm o un molde de 23 x 33 cm." },
+      { "group": "Torta", "text": "En un bowl mediano, mezcla la harina, los polvos de hornear, el bicarbonato, la sal, la canela y la nuez moscada." },
+      { "group": "Torta", "text": "En un bowl grande, combina el azúcar granulada, el azúcar rubia, el aceite, los huevos y la vainilla. Bate hasta que quede suave." },
+      { "group": "Torta", "text": "Incorpora poco a poco los ingredientes secos a los húmedos, mezclando solo hasta integrar. Agrega con movimientos envolventes la zanahoria rallada, las nueces y las pasas (si las usas)." },
+      { "group": "Torta", "text": "Reparte la masa en partes iguales entre los moldes preparados y hornea de 25 a 30 minutos (moldes redondos) o de 35 a 40 minutos (molde de 23 x 33 cm), o hasta que un palillo insertado en el centro salga limpio." },
+      { "group": "Torta", "text": "Deja enfriar las tortas en los moldes por 10 minutos, luego desmóldalas sobre una rejilla y deja que se enfríen por completo." },
+      { "group": "Cobertura de queso crema", "text": "En un bowl grande, bate el queso crema y la mantequilla hasta que quede cremoso. Agrega poco a poco el azúcar flor y sigue batiendo." },
+      { "group": "Cobertura de queso crema", "text": "Incorpora la esencia de vainilla." },
+      { "group": "Cobertura de queso crema", "text": "Cuando la torta esté completamente fría, extiende la cobertura por encima (y entre los pisos, si usaste dos moldes)." }
+    ]
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }

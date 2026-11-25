@@ -13,6 +13,20 @@
     "Pour into a glass.",
     "Top with whipped cream and sprinkles."
   ],
+  "es": {
+    "title": "Malteada especial de vainilla de Donna",
+    "ingredients": [
+      { "quantity": "3", "unit": "bolas", "item": "helado de vainilla" },
+      { "quantity": "120", "unit": "ml", "item": "leche" },
+      { "item": "crema chantilly", "note": "para decorar" },
+      { "item": "chispitas de colores", "note": "para decorar" }
+    ],
+    "steps": [
+      "Licúa el helado con la leche hasta que quede suave.",
+      "Sirve en un vaso.",
+      "Decora con crema chantilly y chispitas de colores."
+    ]
+  },
   "createdAt": "2026-11-22",
   "updatedAt": "2026-11-22"
 }
