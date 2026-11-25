@@ -129,9 +129,9 @@ const es: Dict = {
   contributorsTitle: 'Colaboradores',
   noneShared: 'Aún no hay recetas compartidas.',
 
-  // Describes the banner image. Update the image itself when the Spanish banner is added.
+  // Describes the Spanish banner image (the title text is part of the artwork).
   bannerAlt:
-    'Recetario fusión mundial chileno-americano de Donna, Olivia, Valentín, Kata y Sean. Dos países, cinco corazones, una mesa.',
+    "Libro de Cocina Fusión Chileno-Estadounidense de Donna, Olivia, Valentín, Kata y Sean. Dos países, cinco corazones, una sola mesa.",
 }
 
 export const dict: Record<Lang, Dict> = { en, es }
